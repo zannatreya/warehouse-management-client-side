@@ -1,0 +1,21 @@
+.answer {
+    color: lightgreen;
+    font-size: 35px;
+}
+
+.question {
+    color: red;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.accordion-button {
+    color: coral !important;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+
+}
