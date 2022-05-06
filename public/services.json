@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Hospital Service",
+        "description": " Doctors diagnose, treat, and advise people with illnesses, ailments, and injuries. Their many responsibilities include patient examination, collecting patient information, performing diagnostic tests, and directly treating diseases.",
+        "price": 1000,
+        "img": "https://i.ibb.co/nPFtQNF/home.png"
+    },
+    {
+        "id": 2,
+        "name": "Home Service",
+        "description": " Doctors diagnose, treat, and advise people with illnesses, ailments, and injuries. Their many responsibilities include patient examination, collecting patient information, performing diagnostic tests, and directly treating diseases.",
+        "price": 1570,
+        "img": "https://i.ibb.co/23cdMXB/hospital.png"
+    },
+    {
+        "id": 3,
+        "name": "online Service",
+        "description": " Doctors diagnose, treat, and advise people with illnesses, ailments, and injuries. Their many responsibilities include patient examination, collecting patient information, performing diagnostic tests, and directly treating diseases.",
+        "price": 800,
+        "img": "https://i.ibb.co/YbvjKxs/online.png"
+    }
+]
