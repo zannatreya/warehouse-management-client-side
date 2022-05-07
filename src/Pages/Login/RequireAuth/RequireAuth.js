@@ -7,17 +7,9 @@ const RequireAuth = ({ children }) => {
     const [sendEmailVerification, sending, error] = useSendEmailVerification(auth);
     const [user, loading] = useAuthState(auth);
     const location = useLocation();
-
     if (loading) {
         return <loading></loading>
     }
-
-    // if (user) {
-    //     return children;
-    // } else {
-    //     return <Navigate to="/login" state={{ from: location }} replace />
-    // }
-
     if (!user) {
         // Redirect them to the /login page, but save the current location they were
         // trying to go to when they were redirected. This allows us to send them
@@ -25,11 +17,12 @@ const RequireAuth = ({ children }) => {
         // than dropping them off on the home page.
         return <Navigate to="/login" state={{ from: location }} replace />;
     }
-
-    if (!user.emailVerified) {
-        return <div>
+    console.log(user);
+    if (user.providerData[0]?.providerId === 'password' && !user.emailVerified) {
+        return <div className='text-center mt-5'>
             <h3 className='text-danger'>your email is not verified</h3>
-            <button
+            <h5 className='text-success'>Please verify your email</h5>
+            <button className='btn btn-primary'
                 onClick={async () => {
                     await sendEmailVerification();
                     alert('Sent email');
@@ -41,8 +34,6 @@ const RequireAuth = ({ children }) => {
     }
 
     return children;
-
-
 };
 
 export default RequireAuth;

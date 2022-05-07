@@ -1,33 +1,18 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
+import useInventoryDetails from '../hooks/useInventoryDetails';
 
-const InventoryDetails = ({ inventory }) => {
+const InventoryDetails = () => {
     const { inventoryId } = useParams();
-    const { name, img, description, price } = inventory;
-
-
+    const [service] = useInventoryDetails(inventoryId);
     return (
         <div>
-            <h2>Welcome to detail: {inventoryId}</h2>
-            <div className='inventory mb-5 single-pic'>
-                <div className='d-flex justify-content-center single-pic'>
-                    <img src={img} className='img-fluid client-pic' height={200} alt="" />
-
-                </div>
-                <div className='text-center client-info'>
-                    <h4 className='headline'> {name}</h4>
-                    <p>Price: ${price}</p>
-                    <p><span>{description}</span></p>
-                    <button className='btn-design'>Delivered</button>
-                </div>
-            </div>
-
-            {/* <div className='text-center'>
-
-                <Link to="/">
-                    <button className='btn btn-design'>Proceed Checkout</button>
+            <h2>Welcome you are add to book: {service.name}</h2>
+            <div className='text-center'>
+                <Link to={`/checkout/${inventoryId}`}>
+                    <button className='btn btn-primary'>Proceed Checkout</button>
                 </Link>
-            </div> */}
+            </div>
         </div>
     );
 };
