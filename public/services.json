@@ -1,29 +1,56 @@
 [
     {
         "id": 1,
-        "name": "Hospital Service",
+        "name": "Apple",
         "quantity": "10",
         "supplier": "reya",
-        "description": " Doctors diagnose, treat, and advise people with illnesses, ailments, and injuries. Their many responsibilities include patient examination, collecting patient information, performing diagnostic tests, and directly treating diseases.",
-        "price": 1000,
-        "img": "https://i.ibb.co/nPFtQNF/home.png"
+        "description": " It may prevent obesity and protect against heart disease",
+        "price": 200,
+        "img": "https://i.ibb.co/v10Rzgk/apple.png"
     },
     {
         "id": 2,
-        "name": "Home Service",
+        "name": "Avocado",
         "quantity": "20",
         "supplier": "ibrar",
-        "description": " Doctors diagnose, treat, and advise people with illnesses, ailments, and injuries. Their many responsibilities include patient examination, collecting patient information, performing diagnostic tests, and directly treating diseases.",
+        "description": " Avocados contain high levels of healthy, beneficial fats, which can help a person feel fullerTrusted Source between meals.",
         "price": 1570,
-        "img": "https://i.ibb.co/23cdMXB/hospital.png"
+        "img": "https://i.ibb.co/CV81ZVV/avocado.png"
     },
     {
         "id": 3,
-        "name": "online Service",
+        "name": "Strawberry",
+        "quantity": "30",
+        "supplier": "siraj",
+        "description": " protect your heart, increase HDL (good) cholesterol, lower your blood pressure, and guard against cancer.",
+        "price": 300,
+        "img": "https://i.ibb.co/JK6X6CC/strawberry.png"
+    },
+    {
+        "id": 4,
+        "name": "Cherry",
+        "quantity": "30",
+        "supplier": "rubaied",
+        "description": "  low in calories and chock full of fiber, vitamins, minerals, nutrients, and other good-for-you ingredients.",
+        "price": 800,
+        "img": "https://i.ibb.co/xSswr7B/cherry.png"
+    },
+    {
+        "id": 5,
+        "name": "Banana",
+        "quantity": "30",
+        "supplier": "sadid",
+        "description": "Rich in nutrients and improve blood sugar levels,support digestive health,full of antioxidants.",
+        "price": 100,
+        "img": "https://i.ibb.co/1JV1XfF/banana.png"
+    },
+    {
+        "id": 6,
+        "name": "orange",
         "quantity": "30",
         "supplier": "nubaied",
-        "description": " Doctors diagnose, treat, and advise people with illnesses, ailments, and injuries. Their many responsibilities include patient examination, collecting patient information, performing diagnostic tests, and directly treating diseases.",
-        "price": 800,
-        "img": "https://i.ibb.co/YbvjKxs/online.png"
+        "description": "It boosts your immune system, your body's defense against germs. ",
+        "price": 200,
+        "img": "https://i.ibb.co/xYCCNVw/orange.png"
     }
 ]

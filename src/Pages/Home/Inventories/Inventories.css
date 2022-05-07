@@ -1,10 +1,10 @@
-.services-container {
+.item-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
 }
 
-.service-title {
+.item-title {
     color: blue;
     text-align: center;
 

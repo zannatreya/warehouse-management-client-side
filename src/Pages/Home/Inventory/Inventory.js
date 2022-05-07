@@ -16,7 +16,7 @@ const Inventory = ({ inventory }) => {
             </div>
             <div className='text-center client-info'>
                 <h4 className='headline'> {name}</h4>
-                <p>Price: ${price}</p>
+                <p><span className='headline'>Price:</span> {price}</p>
                 <p><span>{description}</span></p>
                 <button className='btn-design' onClick={() => navigateToInventoryDetail(_id)}>Update</button>
             </div>

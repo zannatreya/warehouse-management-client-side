@@ -11,10 +11,10 @@ const Inventories = () => {
             .then(data => setInventories(data))
     }, [])
     return (
-        <div id='services' className='container'>
+        <div className='container'>
             <div className="row">
-                <h2 className='service-title py-5'>Our Services </h2>
-                <div className='services-container'>
+                <h2 className='item-title py-5'>Inventory Items </h2>
+                <div className='item-container'>
                     {
                         inventories.map(inventory => <Inventory
                             key={inventory._id}

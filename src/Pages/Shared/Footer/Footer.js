@@ -16,7 +16,7 @@ const Footer = () => {
                 <div className='row'>
                     <div className='col-md-12 col-12'>
                         <div className='reserved text-white'>
-                            <p className='text-center'>	&copy; {getCurrentYear()} All rights reserved by </p>
+                            <p className='text-center'>	&copy; {getCurrentYear()} All rights reserved by FruitLab </p>
                         </div>
                         <div className='horigental'></div>
                         <div className='social-icon text-center my-4'>
