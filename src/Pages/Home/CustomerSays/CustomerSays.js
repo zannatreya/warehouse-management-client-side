@@ -21,7 +21,7 @@ const CustomerSays = () => {
                                 <div className='text-center client-info'>
                                     <h5>pushpa dey</h5>
                                     <p>
-                                        <b>Status:</b> <span className='headline'>Online Services.</span>  We are satiesfied from his services. So
+                                        <b>Status:</b> <span className='headline'></span>  We are satiesfied from his services. So
                                         my family members want to say that, Thanks.
                                     </p>
                                     <p>
@@ -41,7 +41,7 @@ const CustomerSays = () => {
                             <div className='text-center client-info'>
                                 <h5>Lima john</h5>
                                 <p>
-                                    <b>Status:</b> <span className='headline'>Home Services.</span>  We are satiesfied from his services. So
+                                    <b>Status:</b> <span className='headline'></span>  We are satiesfied from his services. So
                                     my family members want to say that, Thanks.
                                 </p>
                                 <p>
@@ -60,7 +60,7 @@ const CustomerSays = () => {
                             <div className='text-center client-info'>
                                 <h5>Nubaied Ibrar</h5>
                                 <p>
-                                    <b>Status:</b> <span className='headline'>Hospital Services.</span>  We are satiesfied from his services. So
+                                    <b>Status:</b> <span className='headline'></span>  We are satiesfied from his services. So
                                     my family members want to say that, Thanks.
                                 </p>
                                 <p>

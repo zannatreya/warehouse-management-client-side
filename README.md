@@ -1,7 +1,18 @@
-# Getting Started with Create React App
+# Getting Started with FruitLab
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [FruitLab client-side github link](https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-zannatreya).
 
+This project was bootstrapped with [FruitLab server-side github link](https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-zannatreya).
+
+This project was bootstrapped with [FruitLab live site link]().
+
+## Features
+
+- In this project,there are 4 nav link.Home,inventories,Blogs,Login.
+- In the home page,I create first section with image carousel and article,second section with inventories and third section with customer review.
+- In inventory page,there are six items  and one button named update,when click update button it goes to details page which contain item details and 3 button and one input field.when click delivered button,the item quantity is decreased by one.
+- In blogs page,there are 3 ques and answer.
+- I also use react route and Bootstraps.
 ## Available Scripts
 
 In the project directory, you can run:

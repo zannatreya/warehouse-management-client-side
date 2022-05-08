@@ -42,30 +42,33 @@ const InventoryDetails = () => {
             })
     }
     return (
-        <div className='container border'>
-            <div className='d-flex '>
-                <div>
-                    <img src={inventory.img} alt="" />
+        <div className='container border mt-3 '>
+            <div>
+                <div className=' col-12 '>
+                    <div>
+                        <img className='img-fluid rounded mx-auto d-block' src={inventory.img} alt="" />
 
-                </div>
-                <div>
-                    <h3 className='text-primary'> {inventory.name}</h3>
-                    <p>Supplier: {inventory.suppliername}</p>
-                    <p>Quantity: {inventory.quantity}</p>
-                    <p>Description: {inventory.description}</p>
-                    <p>Price: {inventory.price}</p>
-                    <div className='text-center p-2'>
-                        <button className='btn-design m-3' onClick={handleDelivery}>Delivery</button>
-                        <button className='btn-design' onClick={() => navigate('/manage')}>Manage Inventories</button>
                     </div>
                     <div>
-                        <form onSubmit={handleRestock}>
-                            <input type="number" name="restock" id="" />
-                            <button className='btn-design m-2'>
-                                Restock
-                            </button>
-                        </form>
+                        <h3 className='text-primary'> {inventory.name}</h3>
+                        <p>Supplier: {inventory.suppliername}</p>
+                        <p>Quantity: {inventory.quantity}</p>
+                        <p>Description: {inventory.description}</p>
+                        <p>Price: {inventory.price}</p>
+                        <div className='text-center p-2'>
+                            <button className='btn-design m-3' onClick={handleDelivery}>Delivery</button>
+                            <button className='btn-design' onClick={() => navigate('/manage')}>Manage Inventories</button>
+                        </div>
+                        <div>
+                            <form onSubmit={handleRestock}>
+                                <input type="number" name="restock" id="" />
+                                <button className='btn-design m-2'>
+                                    Restock
+                                </button>
+                            </form>
+                        </div>
                     </div>
+
                 </div>
 
 

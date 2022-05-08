@@ -18,6 +18,9 @@ const Inventory = ({ inventory }) => {
                 <h4 className='headline'> {name}</h4>
                 <p><span className='headline'>Price:</span> {price}</p>
                 <p><span>{description}</span></p>
+                <p> <span className='headline'>Supplier: </span>{inventory.suppliername}</p>
+                <p> <span className='headline'>Quantity:</span> {inventory.quantity}</p>
+
                 <button className='btn-design' onClick={() => navigateToInventoryDetail(_id)}>Update</button>
             </div>
         </div>
