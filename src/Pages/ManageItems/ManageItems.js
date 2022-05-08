@@ -7,7 +7,7 @@ const ManageItems = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
-            const url = `http://localhost:5000/product/${id}`;
+            const url = `https://guarded-wildwood-20406.herokuapp.com/product/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -21,7 +21,7 @@ const ManageItems = () => {
     }
     return (
         <div className='w-50 mx-auto'>
-            <h2>Manage your services</h2>
+            <h2>Manage your Items</h2>
             {
                 inventories.map(inventory => <div key={inventory._id}>
                     <h5>{inventory.name} <button onClick={() => handleDelete(inventory._id)}>X</button></h5>

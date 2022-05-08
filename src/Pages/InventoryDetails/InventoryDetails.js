@@ -9,13 +9,13 @@ const InventoryDetails = () => {
 
     const [inventory, setInventory] = useState({})
     useEffect(() => {
-        const url = `http://localhost:5000/product/${inventoryId}`
+        const url = `https://guarded-wildwood-20406.herokuapp.com/product/${inventoryId}`
         fetch(url)
             .then(res => res.json())
             .then(data => setInventory(data))
     })
     const handleDelivery = () => {
-        fetch(`http://localhost:5000/product/decrease/${inventoryId}`, {
+        fetch(`https://guarded-wildwood-20406.herokuapp.com/product/decrease/${inventoryId}`, {
             method: 'PUT',
         })
             .then(res => res.json())
@@ -29,7 +29,7 @@ const InventoryDetails = () => {
         e.preventDefault();
         const value = e.target.restock.value;
 
-        fetch(`http://localhost:5000/product/increase/${inventoryId}`, {
+        fetch(`https://guarded-wildwood-20406.herokuapp.com/product/increase/${inventoryId}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"

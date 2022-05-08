@@ -5,7 +5,7 @@ const useInventoryDetails = (inventoryId) => {
     const [inventory, setInventory] = useState({});
 
     useEffect(() => {
-        const url = `http://localhost:5000/product/${inventoryId}`;
+        const url = `https://guarded-wildwood-20406.herokuapp.com/product/${inventoryId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setInventory(data))
