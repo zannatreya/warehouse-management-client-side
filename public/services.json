@@ -4,7 +4,7 @@
         "name": "Apple",
         "quantity": "10",
         "supplier": "reya",
-        "description": " It may prevent obesity and protect against heart disease",
+        "description": " It may prevent obesity and protect against heart disease.",
         "price": 200,
         "img": "https://i.ibb.co/v10Rzgk/apple.png"
     },

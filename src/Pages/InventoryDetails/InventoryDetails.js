@@ -42,29 +42,38 @@ const InventoryDetails = () => {
             })
     }
     return (
-        <div>
-            <img src={inventory.img} alt="" />
-            <h2>Name: {inventory.name}</h2>
-            <h2>Supplier: {inventory.supplier}</h2>
-            <h2>Quantity: {inventory.quantity}</h2>
-            <h2>Description: {inventory.description}</h2>
-            <h2>Price: {inventory.price}</h2>
+        <div className='container border'>
+            <div className='d-flex '>
+                <div>
+                    <img src={inventory.img} alt="" />
 
-            <div className='text-center'>
-                {/* <Link to={`/checkout/${inventoryId}`}>
-                    <button className='btn btn-primary'>Proceed Checkout</button>
-                </Link> */}
-                <button onClick={handleDelivery}>Delivery</button>
-                <button onClick={() => navigate('/manage')}>Manage Inventories</button>
+                </div>
+                <div>
+                    <h3 className='text-primary'> {inventory.name}</h3>
+                    <p>Supplier: {inventory.suppliername}</p>
+                    <p>Quantity: {inventory.quantity}</p>
+                    <p>Description: {inventory.description}</p>
+                    <p>Price: {inventory.price}</p>
+                    <div className='text-center p-2'>
+                        <button className='btn-design m-3' onClick={handleDelivery}>Delivery</button>
+                        <button className='btn-design' onClick={() => navigate('/manage')}>Manage Inventories</button>
+                    </div>
+                    <div>
+                        <form onSubmit={handleRestock}>
+                            <input type="number" name="restock" id="" />
+                            <button className='btn-design m-2'>
+                                Restock
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+
+
             </div>
-            <div>
-                <form onSubmit={handleRestock}>
-                    <input type="number" name="restock" id="" />
-                    <button >
-                        Restock
-                    </button>
-                </form>
-            </div>
+
+
+
         </div>
     );
 };
