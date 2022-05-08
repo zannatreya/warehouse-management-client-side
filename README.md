@@ -4,7 +4,7 @@ This project was bootstrapped with [FruitLab client-side github link](https://gi
 
 This project was bootstrapped with [FruitLab server-side github link](https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-zannatreya).
 
-This project was bootstrapped with [FruitLab live site link]().
+This project was bootstrapped with [FruitLab live site link](https://warehouse-management-8028c.web.app/).
 
 ## Features
 
